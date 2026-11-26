@@ -1,7 +1,7 @@
 'use strict';
 
-function greet(name) {
-  return `Hello, ${name}!`;
+function greet(name, options) {
+  return options?.style === 'formal' ? `Good day, ${name}.` : `Hello, ${name}!`;
 }
 
 module.exports = { greet };
